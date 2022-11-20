@@ -1,0 +1,143 @@
+body{
+    min-height: 2000px;
+    background-color:black;
+    background-color: grey;
+    background-color: white;
+    color: rgb(8, 0, 255);
+    font-size: 90%;
+    font-family: 'arial', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    text-align:left ;
+    
+   
+  
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    margin-top: -50px;
+ 
+}
+.header .logo{
+    width: 10%;
+    float: left;
+}
+.header .nav{
+    width: 80%;
+    float: left;
+    list-style: none;
+    background-color:rgba(0, 0, 0, 0.685);
+    height: 60px;
+    text-align: center;
+}
+.header .nav li{
+    display: inline-block;
+}
+.header .nav li a{
+    color: white;
+    text-decoration: none;
+    display: block;/*تحويله لعنصر block*/
+    padding: 30px 40px;
+    font-size: 20px;
+}
+
+.header .nav li a:after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: chartreuse;
+    transition: .7s;
+}
+.header .nav li a:hover:after{
+   width: 100%;
+   
+}
+.header .nav li a:hover{
+    background-color: black;
+    height: 1px;
+    color:red;
+}
+    
+
+a{
+    text-decoration: none;
+}
+a:link,a:visited{color: chartreuse;}
+a:hover,a:active{color: aqua;}
+.body{
+    margin: 0px auto;
+    width: 80%;
+    clear: both;
+    margin-left: 150px;
+}
+
+
+.maincontent{
+    width: 50%;
+    float: left;
+    height: 1000px;
+  }
+
+
+.top_content{
+    background-color:;
+    padding: 20px;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+.post_info{
+    font-size: 90%;
+    color: black;
+    font-style: italic;
+    margin-top: -20px;
+}
+.post_content{
+    display:inline;
+    
+
+}
+
+
+
+.thesidebar{
+    width: 40%;
+    height: 300px;
+    margin: 2% 0 0 2%;
+    float: right;
+    padding: 2%;
+    background-color:rgb(220, 224, 243);
+    border-radius: 50%;
+    text-align: center;
+}
+.thesidebar.b{
+    border-radius: 0;
+}
+#fotter{
+    float: left;
+    margin-top: 500px;
+  background: linear-gradient(to right,black,white,blue );
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    color: rgb(237, 237, 237);
+    
+}
+.post_img{
+    width: 40%;
+    height: 300px;
+    display: block;
+    border-radius: 50%;
+    
+}
+figure{
+    margin: 10px 0;
+    font-size: large;
+    text-align: center;
+    color: #000;
+   
+}
+
+

@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+body 
+{
+	margin: 0;
+	
+	background-size:cover;
+	background-repeat:null;
+	height:2000px;
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.header .logo{
+    width: 10%;
+    float: left;
+}
+.header .nav{
+    width: 80%;
+    float: left;
+    list-style: none;
+    background-color:rgba(0, 0, 0, 0.685);
+    height: 60px;
+    text-align: center;
+}
+.header .nav li{
+    display: inline-block;
+}
+.header .nav li a{
+    color: white;
+    text-decoration: none;
+    display: block;/*تحويله لعنصر block*/
+    padding: 30px 40px;
+    font-size: 20px;
+}
+
+.header .nav li a:after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: chartreuse;
+    transition: .7s;
+}
+.header .nav li a:hover:after{
+   width: 100%;
+   
+}
+.header .nav li a:hover{
+    background-color: black;
+    height: 50px;
+    color:red;
+}
+
+
+
+
+
+
+.Footer{
+
+	border-top : 3px solid Black;
+	margin-top : 430px;
+
+}
+.Footer h3
+{
+ margin-left: 20px;
+ color: rgb(15, 28, 207);
+}
+
+
+.BoxR1
+{
+	margin-left: 25px;
+	float: left;
+    width: 30%;
+    border-radius: 10px;
+    border: 0px solid rgb(168, 157, 157);
+    margin-bottom: 3px;
+    height: 250px;
+    padding: 6px;
+    margin-top: 40px;
+    background: linear-gradient(to left,black,white,blue );
+}
+
+.BoxR2
+{
+	margin-left: 25px;
+	float: left;
+    width: 30%;
+    border-radius: 10px;
+    border: 0px solid gray;
+    margin-bottom: 3px;
+    height: 250px;
+    padding: 6px;
+    margin-top: 40px;
+    background: linear-gradient(to left,gray,white,brown );
+	
+}
+
+.BoxR3
+{
+	margin-left: 25px;
+	float: left;
+    width: 30%;
+    border-radius: 10px;
+    border: 0px solid gray;
+    margin-bottom: 3px;
+    height: 250px;
+    padding: 6px;
+    margin-top: 40px;
+    background: linear-gradient(to left,rgb(0, 255, 213),white,yellow );
+	
+}
+.BoxR4{
+    margin-left: 25px;
+	float: left;
+    width: 30%;
+    border-radius: 10px;
+    border: 0px solid gray;
+    margin-bottom: 3px;
+    height: 250px;
+    padding: 6px;
+    margin-top: 40px;
+    background: linear-gradient(to left,rgb(225, 0, 255),white,rgb(109, 250, 101) );
+	
+
+}
+.BoxC1
+{   text-align: center;
+	margin-left: 490px;
+	float: left;
+    width: 300px;
+    border-radius: 10px;
+    border: 0px solid #f2f5f454;
+    margin-bottom: 3px;
+    height: 130px;
+    padding: 20px; /* المحتوا الدي داخل المربع وما يحاذيه*/
+    background: linear-gradient(to top,rgb(141, 194, 172),rgb(66, 73, 168));
+    
+
+}
+
+.BoxC11
+{
+	margin-left: 650px;
+	float: left;
+    width: 70px;
+    border-radius: 10px;
+    border: 0px solid #f2f5f454;
+    margin-bottom: 3px;
+    height: 30px;
+    padding: 20px; /* المحتوا الدي داخل المربع وما يحاذيه*/
+    background-color: rgba(44, 42, 179, 0.761);
+    margin-top: 10px;
+}

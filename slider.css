@@ -1,0 +1,99 @@
+.slider {
+	margin: 0 auto;
+	width: 100%;
+	height: 310px;
+	padding-top: 15px;
+	background: url(../images/skin01/slider_bg.png) repeat-x left top;
+}
+#slider1 {
+    width: 950px; /* important to be same as image width */
+    height: 316px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+	background-color: #fff;
+}
+
+#slider1Content {
+    width: 950px; /* important to be same as image width or wider */
+    position: absolute;
+	top: 0;
+}
+.slider1Image {
+    float: left;
+    position: relative;
+	display: none;
+}
+.slider1Image span {
+    position: absolute;
+	font: normal 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #fff;
+    padding: 10px 23px 15px 23px;
+    width: 910px;
+    background-color: #000;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+    opacity: 0.8;
+    color: #fff;
+    display: none;
+}
+.clear {
+	clear: both;
+}
+.slider1Image span a {
+	float: left;
+}
+.slider1Image span strong {
+    font-size: 21px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	float: left;
+	width: 250px;
+}
+.top {
+	top: 0;
+	left: 0;
+}
+.bottom {
+	bottom: 0;
+    left: 0;
+	width: 950px !important;
+	height: 50px;
+}
+.left {
+	top: 5px;
+    left: 5px;
+	width: 250px !important;
+	height: 280px;
+}
+.right {
+	top: 5px;
+	left: 650px;
+	width: 250px !important;
+	height: 280px;
+}
+ul { list-style-type: none; margin:0px; padding:0px;}
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+.more_slider:link, .more_slider:visited {
+	background: url(../images/skin01/slider_button.png) no-repeat left top;
+	width: 200px;
+	height: 35px;
+	text-align: center;
+	padding: 15px 0px 0px 0px;
+	float: left;
+	margin-top: 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.more_slider:hover {
+	color: #830007;
+}
+
+

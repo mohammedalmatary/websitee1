@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+body{
+ perspective: 600px;    
+}
+.clear{
+    clear: both;
+ }
+ #top {
+    margin: 0 auto;
+    width: 950px;
+    height: 143px;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 950px;
+    height: 340px;
+    background: url(../images/skin01/slider_bg.jpg) no-repeat center top;
+}
+
+
+/* ----------- logo ----------- */
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 186px;
+    background: url(../images/skin01/ansar.png) no-repeat left top;
+}
+
+
+/* ----------- top links ----------- */
+
+.top_right_links {
+    float: right;
+    width: 720px;
+    height: 45px;
+    padding-top: 10px;
+}
+
+ul.toplinks {
+    float: right;
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+}
+
+.toplinks li {
+    float: left;
+    margin: 0px 3px;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 12px;
+}
+/*///////////////menue/////////////////////*/
+.menu {
+	width: 720px;
+	height: 40px;
+	float: right;
+	margin-top: 4px;
+}
+
+.jqueryslidemenu{
+width: 100%;
+}
+
+.jqueryslidemenu ul{
+margin: 0px 0px 0px 10px;
+padding: 0px 0px 0px 0px;
+list-style-type: none;
+float: right;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: inline;
+float: right;
+z-index:100;
+font-size:15px;
+text-transform: uppercase;
+margin: 0px 1px;
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+display: block;
+padding: 9px 15px 9px 15px;
+text-decoration: none;
+}
+
+
+.jqueryslidemenu ul li a.active:link, .jqueryslidemenu ul li a.active:visited {
+	padding: 9px 15px 9px 15px;
+	background: url(../images/skin01/menu_hover.jpg) repeat-x left -3px;
+	color: #fff;
+}
+
+.jqueryslidemenu ul li.home a{
+padding-left:0px;
+}
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited{
+	background: url(../images/skin01/menu_bg.jpg) repeat-x left top;
+	color: #000;
+}
+
+.jqueryslidemenu ul li a:hover{
+	background: url(../images/skin01/menu_hover.jpg) repeat-x left -3px;
+	color: #fff;
+
+}
+	
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+position: absolute;
+left: -12px !important;
+top:35px !important;
+display: block;
+visibility: hidden;
+padding:0px !important;
+padding-top:6px !important;
+}
+
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li{
+display: list-item;
+float:none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+left: 180px !important;
+top: -1px !important;
+padding-top:0px !important;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a{
+width: 166px; /*width of sub menus*/
+padding: 5px 12px;
+margin: 0;
+border: 2px solid #000;
+border-top-width:0px;
+background: url(../images/skin01/menu_drop_hover.jpg) repeat-x left top;
+	color: #fff;
+    font-size: 30px;
+}
+
+
+
+
+.menu .jqueryslidemenu li a:after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: chartreuse;
+    transition: .7s;
+}
+.menu .jqueryslidemenu li a:hover:after{
+   width: 100%;
+   
+}
+.menu .jqueryslidemenu li a:hover{
+    background-color: black;
+    height: 40px;
+    font-size: 20px;
+    color:white;
+}
+/*///////////home///////////////////////////*/
+
+.home{
+    height: 100vh;
+    background-image: url(ans.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: -30px;
+    border-radius: 350px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(55, 61, 230, 0.46);
+    border-radius: 200px;
+
+}
+.home-content{
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+   
+}
+.home .title{
+    color:white;
+    font-size: 50px;
+    
+}
+.home .desc{
+    margin: 20px 0;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1px;
+   text-align: center;
+}
+.home .bot{
+    width: 150px;
+    font-size: 20px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.bot:hover{
+    opacity: 0.6;
+    background-color: black;
+    color: red;
+}
+.b1{
+    background-color: chartreuse;
+    margin-right: 10px;
+    
+}
+.b2{
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+/*-----------------------------------header1----------------------------*/
+.header1{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 120px 0;
+}
+
+
+/*--------------secabout------------------------------------*/
+.pd-y{
+    padding: 120px 0;
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.section-header .section-title{
+    font-size: 35px;
+    margin-bottom: 10px;
+
+}
+.section-header .line{
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin: 0 auto 70px auto;
+    background-color: #6195ff;
+}
+/*--------------------about---------*/
+.about{
+
+}
+.about-content{
+    overflow: hidden;
+}
+.about-itm{
+    width: 30%;
+    float:left;
+    text-align: center;
+    border: 1px solid #a8a8a8;
+    padding: 50px 20px;
+  
+}
+.ltr-effect{
+    position: relative;
+}
+.ltr-effect::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -1;
+    transition: 1s;
+  
+}
+.ltr-effect:hover::after{
+     width: 100%;
+     height: 100%;
+     background-color: #000;
+}
+
+.about-itm:hover.s{
+  background-image: url(ss.jpg);
+  border-radius: 50%;
+}
+.about-itm:hover.my{
+    background-image: url(my.jpg);
+    border-radius: 50%;
+  }
+  .about-itm:hover.al{
+    background-image: url(al1.jpeg);
+    border-radius: 50%;
+  } 
+.about-itm:hover .about-itm-title{
+    color: rgb(21, 253, 0);
+}
+.about-itm.mg{
+    margin:0 5%;
+}
+.about-itm .icon{
+    color: #6195ff;
+    margin-bottom: 10px;
+}
+.about-itm-title{
+    margin-bottom: 15px;
+    transition: color 1s;
+}
+.about-itm-desc{
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: black;
+}
+.about-itm:hover .about-itm-desc{
+    color: rgb(21, 253, 0);
+}
+.about-itm-link{
+    color: #6195ff;
+}
+/* ---------------------port-----------*/
+
+.portfolio{
+    background-color: #f9f9f9;
+    border-radius: 50%;
+}
+.portfolio-content{
+    overflow: hidden;
+    
+}
+.portfolio-itm{
+    width: 30%;
+    float: left;
+    margin-bottom:50px;
+    position: relative;
+    padding: 20px;
+
+}
+.portfolio-itm .layer-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,.5);
+    opacity: 0;
+   
+}
+.portfolio-itm:hover .layer-content{
+    opacity: 1;
+}
+.layer-content .layer-info{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.portfolio-itm.mg{
+    margin:0 5%;
+    
+}
+.portfolio-itm img{
+    width: 100%;
+    border-radius: 50%;
+   /*  background-size: cover; */
+}
+.layer-content{
+    border-radius: 50%;
+}
+
+.layer-content .cate{
+    color:#daddc5;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 25px;
+
+}
+.layer-info:hover .cate{
+    background-color: #000;
+    color: aqua;
+}
+.layer-content:hover .layer-content-tital{
+    background-color: white;
+    color: #6195ff;
+}
+
+.layer-content-tital{
+    font-size: 20px;
+    color: white;
+   margin-bottom: 10px;
+
+}
+
+/*----------------------services chose--------*/
+.services{
+    background-color: #f9f9f9;
+}
+.services-itm{
+    width: 50%;
+    float: right;
+
+}
+.services-itm .section-header{
+    text-align: center;
+}
+.services-itm .section-header .line{
+  margin-bottom: 60px;
+}
+.services-itm-desc{
+    padding-right: 20px;
+    color: #000000;
+    font-size: 20px;
+    
+}
+.services-list{
+    list-style: none;
+}
+/* .services-list li i{
+    border: 1px solid blue;
+    pading:7px;
+    border-radius: 50%;
+
+}  */
+/*////////////////////test////////////////*/
+
+
+/*/////foter//////////////////////////////*/
+
+.footer{
+    background:rgb(187, 185, 185);
+    text-align: center;
+    margin-bottom: 50px;
+   
+  }
+  
+  
+  
+  .boxFooter .fa-envelope{
+    position: absolute;
+    top:1.8rem; left:2rem;
+    color:rgb(111, 113, 231);
+    font-size: 2rem;
+  }
+  
+  .boxFooter .fa-envelope:hover{
+    color:var(--red);
+  }
+  
+  
+  .boxFooter .fa-phone{
+    position: absolute;
+    top:1.8rem; right:2rem;
+    color:rgb(226, 71, 33);
+    font-size: 2rem;
+  }
+  
+  .boxFooter .fa-phone:hover{
+    color:var(--red);
+  }
+  
+  .boxFooter img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 .5rem rgba(7, 255, 234, 0.1);
+    object-fit: cover;
+    height:10rem;
+    width:10rem;
+    margin:1rem 0;
+    background-color: white;
+  }
+  
+  .boxFooter h3{
+    font-size: 2rem;
+    color:rgb(53, 55, 55);
+  }
+  
+  .boxFooter span{
+    font-size: 1.7rem;
+    color:var(--red);
+  }
+  
+  .boxFooter .share{
+    padding-top: 2rem;
+  }
+  
+  .boxFooter .share a{
+    margin:0 .3rem;
+    height:4rem;
+    width:4rem;
+    line-height: 4rem;
+    background:#6ba2c4;
+    color:#666;
+    border-radius: .5rem;
+    font-size: 2rem;
+  }
+  
+  .boxFooter .share a:hover{
+    background:rgb(14, 19, 168);
+    color:rgb(6, 247, 199);
+  }
+  
+
+  
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:.7rem 0;
+    color:#fff;
+  }
+  
+  .footer .box-container .box p{
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a:hover{
+    color:var(--orange);
+    text-decoration: underline;
+  }
+  
+  .footer .credit{
+    text-align: center;
+    padding:2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color:rgb(20, 18, 18);
+    border-top: .1rem solid rgba(255,255,255,.2);
+  }
+  
+  .footer .credit span
+  {
+    color:var(--orange);
+  }
+  
+  .footer .credit span a
+  {
+    color:var(--orange);
+  }
+  
+  .footer .credit span a:hover
+  {
+    color:rgb(6, 6, 6);
+  }
+  
+  
